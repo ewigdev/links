@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🌐 Links Component — Next.js + Framer Motion
 
-## Getting Started
+A **standalone and reusable component** for displaying animated link sections in any Next.js project.  
+Perfect for **portfolios, personal sites, and developer homepages**. Bring your links to life with smooth animations and a clean design.
 
-First, run the development server:
+---
+
+## 🚀 Features
+
+- Smooth animations with **Framer Motion**
+- Fully **mobile responsive**
+- Easy to **customize** and extend
+- Organize links into multiple **sections**
+- Optional **profile avatar**
+- Styled with **CSS Modules**
+- **Plug‑and‑play** for any Next.js project
+
+---
+
+## 📦 Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/ewigdev/links.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Navigate into the project:
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```bash
+cd links
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Install dependencies:
 
-## Learn More
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+4. Make sure **Framer Motion** is installed:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm install framer-motion
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🧩 Usage
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Copy the component folder into your Next.js project:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+/src/components/LinksComponent
+```
+
+2. Import and use it anywhere in your app:
+
+```jsx
+import LinksComponent from "@/components/LinksComponent/LinksComponent";
+
+export default function Page() {
+  return <LinksComponent />;
+}
+```
+
+---
+
+## 🎨 Customization
+
+### Modify link sections
+
+Edit the sections directly in `LinksComponent.jsx`:
+
+```jsx
+const linkSections = [
+  {
+    section: "Work",
+    links: [
+      {
+        title: "Demo Website",
+        href: "https://example.com",
+        img: "/assets/links/sample.webp",
+      },
+    ],
+  },
+];
+```
+
+### Update assets
+
+- Link icons: `/public/assets/links/`
+- Avatar image: `/public/assets/avatar-placeholder.png`
+
+---
+
+## 🗂 Recommended Project Structure
+
+```
+/src
+ └── /components
+      └── /LinksComponent
+           ├── LinksComponent.jsx
+           ├── Links.module.css
+/public
+ └── /assets
+      ├── avatar-placeholder.webp
+      └── /links
+          ├── sample-site.webp
+          ├── sample-github.webp
+          ├── sample-support.webp
+          └── sample-blog.webp
+README.md
+package.json
+```
+
+---
+
+## 🎬 Live Demo
+
+See the component in action:
+
+![Links Component Demo](assets/sample-site.webp)
+
+Or check it live in my portfolio: [Ewig Dev Links Page](https://ewigdev.tokyo/links)
+
+---
+
+## 📝 License
+
+MIT License — free to use, modify, and distribute.
+
+---
+
+## ❤️ Author
+
+**Cris Alarcon** — Created as a reusable component for portfolio and web projects.  
+Check out the live version in my portfolio: [Ewig Dev Links Page](https://ewigdev.tokyo/links)
+
