@@ -17,7 +17,7 @@ module.exports = {
       xl: "1200px",
     },
     fontFamily: {
-      primary: "var(--font-jetbrainsMono)", // 👈 maps to Inter
+      primary: "var(--font-jetbrainsMono)", 
     },
     extend: {
       colors: {
@@ -43,5 +43,4 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
 };

@@ -133,6 +133,6 @@ MIT License — free to use, modify, and distribute.
 
 ## ❤️ Author
 
-**Cris Alarcon** — Created as a reusable component for portfolio and web projects.  
-Check out the live version in my portfolio: [Ewig Dev Links Page](https://ewigdev.tokyo/links)
+**EwigDev** — Created as a reusable component for portfolio and web projects.  
+Check out the live full integrated version in my portfolio: [Ewig Dev Links Page](https://ewigdev.tokyo/links)
 
